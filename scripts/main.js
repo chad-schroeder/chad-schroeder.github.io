@@ -1,6 +1,8 @@
 const changePage = event => {
   if (!event.target.closest('[data-url]')) return;
 
+  event.preventDefault();
+
   // get page location
   const pageURL = event.target.closest('[data-url]').getAttribute('data-url');
 
