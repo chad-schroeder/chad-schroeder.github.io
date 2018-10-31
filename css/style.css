@@ -80,7 +80,7 @@ p {
 /* nav */
 nav {
   justify-content: center;
-  position: fixed;
+  position: absolute;
   top: 18px;
   left: 0;
   right: 0;
@@ -102,15 +102,6 @@ nav {
 .nav-item.active .nav-link {
   color: white;
   background-color: #333;
-}
-
-/* header */
-header {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
 }
 
 /* main */
@@ -255,7 +246,6 @@ section.page-show {
 @media (min-width: 576px) {
   nav {
     justify-content: flex-start;
-    position: absolute;
     top: auto;
     bottom: 18px;
     left: 130px;
