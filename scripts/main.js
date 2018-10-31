@@ -1,5 +1,5 @@
 const changePage = event => {
-  if (!event.target.closest('[data-url')) return;
+  if (!event.target.closest('[data-url]')) return;
 
   // get page identity
   const pageURL = event.target.closest('[data-url]').getAttribute('data-url');
