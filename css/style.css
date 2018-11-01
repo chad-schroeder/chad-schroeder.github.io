@@ -277,8 +277,8 @@ section.page-show {
 
 @media (min-width: 768px) {
   .avatar {
-    left: -61px;
-    width: 313px;
+    left: -52px;
+    width: 280px;
   }
   nav {
     left: 200px;
