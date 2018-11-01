@@ -248,8 +248,9 @@ section.page-show {
     justify-content: flex-start;
     top: auto;
     bottom: 18px;
-    left: 130px;
+    left: 150px;
     right: auto;
+    font-size: 0.9rem;
   }
   .nav-link {
     padding: 0.4rem 1.25rem;
