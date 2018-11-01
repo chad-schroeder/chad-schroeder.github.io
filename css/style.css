@@ -114,18 +114,6 @@ main {
   height: 100vh;
 }
 
-main::after {
-  content: '';
-  position: absolute;
-  top: 60px;
-  left: 32px;
-  right: 32px;
-  bottom: 65px;
-  z-index: 1;
-  pointer-events: none;
-  border: 4px solid black;
-}
-
 /* containers and rows */
 .container-fluid {
   display: flex;
@@ -150,6 +138,7 @@ section {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   overflow-y: auto;
   will-change: opacity;
+  border: 4px solid black;
   transition: opacity 0.5s;
 }
 
