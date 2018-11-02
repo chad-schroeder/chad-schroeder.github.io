@@ -1,3 +1,7 @@
+// mobile full height
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 const changePage = event => {
   if (!event.target.closest('[data-url]')) return;
 
