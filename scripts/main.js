@@ -36,6 +36,11 @@ const changePage = event => {
   newPage.classList.add('page-show');
 };
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', event => {
   changePage(event);
+});
+
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
