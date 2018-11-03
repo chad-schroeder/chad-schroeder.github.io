@@ -5,6 +5,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 const changePage = event => {
   if (!event.target.closest('[data-url]')) return;
 
+  // prevent hash from being appended to window.location
   event.preventDefault();
 
   // get page location
@@ -25,15 +26,15 @@ const changePage = event => {
       '.nav-link[data-url=' + pageURL + ']'
     );
     newNav.parentNode.classList.add('active');
+
+    // hide current page
+    const currentPage = document.querySelector('.page-show');
+    currentPage.classList.remove('page-show');
+
+    // show new page
+    const newPage = document.querySelector('.page-' + pageURL);
+    newPage.classList.add('page-show');
   }
-
-  // hide current page
-  const currentPage = document.querySelector('.page-show');
-  currentPage.classList.remove('page-show');
-
-  // show new page
-  const newPage = document.querySelector('.page-' + pageURL);
-  newPage.classList.add('page-show');
 };
 
 document.addEventListener('click', event => {
